@@ -11,25 +11,36 @@ export default class extends React.Component {
     loading: false,
   }
 
-  handleSubmit = () => {
+  handleSubmit = event => {
+    event.preventDefault()
     const { searchTerm } = this.state
     if (searchTerm !== '') {
       this.searchByTerm()
     }
   }
 
+  updateTerm = event => {
+    const {
+      target: { value },
+    } = event
+    this.setState({
+      searchTerm: value,
+    })
+  }
+
   searchByTerm = async () => {
     const { searchTerm } = this.state
+    this.setState({ loading: true })
     try {
       const {
         data: { results: movieResults },
       } = await movieApi.search(searchTerm)
       const {
-        data: { results: showResults },
+        data: { results: tvResults },
       } = await tvApi.search(searchTerm)
       this.setState({
         movieResults,
-        showResults,
+        tvResults,
       })
       this.setState({
         loading: true,
@@ -46,15 +57,16 @@ export default class extends React.Component {
   }
 
   render() {
-    const { movieResults, tvResults, searchTerm, error, loading } = this.state
+    const { movieResults, tvResults, loading, error, searchTerm } = this.state
     return (
       <SearchPresenter
         movieResults={movieResults}
         tvResults={tvResults}
-        searchTerm={searchTerm}
-        error={error}
         loading={loading}
+        error={error}
+        searchTerm={searchTerm}
         handleSubmit={this.handleSubmit}
+        updateTerm={this.updateTerm}
       />
     )
   }
