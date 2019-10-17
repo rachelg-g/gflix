@@ -1,63 +1,56 @@
-import React from 'react'
-import SearchPresenter from './SearchPresenter'
-import { movieApi, tvApi } from 'api'
+import React from "react";
+import SearchPresenter from "./SearchPresenter";
+import { moviesApi, tvApi } from "../../api";
 
 export default class extends React.Component {
   state = {
     movieResults: null,
     tvResults: null,
-    searchTerm: '',
-    error: null,
+    searchTerm: "",
     loading: false,
-  }
+    error: null
+  };
 
   handleSubmit = event => {
-    event.preventDefault()
-    const { searchTerm } = this.state
-    if (searchTerm !== '') {
-      this.searchByTerm()
+    event.preventDefault();
+    const { searchTerm } = this.state;
+    if (searchTerm !== "") {
+      this.searchByTerm();
     }
-  }
+  };
 
   updateTerm = event => {
     const {
-      target: { value },
-    } = event
+      target: { value }
+    } = event;
     this.setState({
-      searchTerm: value,
-    })
-  }
+      searchTerm: value
+    });
+  };
 
   searchByTerm = async () => {
-    const { searchTerm } = this.state
-    this.setState({ loading: true })
+    const { searchTerm } = this.state;
+    this.setState({ loading: true });
     try {
       const {
-        data: { results: movieResults },
-      } = await movieApi.search(searchTerm)
+        data: { results: movieResults }
+      } = await moviesApi.search(searchTerm);
       const {
-        data: { results: tvResults },
-      } = await tvApi.search(searchTerm)
+        data: { results: tvResults }
+      } = await tvApi.search(searchTerm);
       this.setState({
         movieResults,
-        tvResults,
-      })
-      this.setState({
-        loading: true,
-      })
+        tvResults
+      });
     } catch {
-      this.setState({
-        error: "Can't find results.",
-      })
+      this.setState({ error: "Can't find results." });
     } finally {
-      this.setState({
-        loading: false,
-      })
+      this.setState({ loading: false });
     }
-  }
+  };
 
   render() {
-    const { movieResults, tvResults, loading, error, searchTerm } = this.state
+    const { movieResults, tvResults, searchTerm, loading, error } = this.state;
     return (
       <SearchPresenter
         movieResults={movieResults}
@@ -68,6 +61,6 @@ export default class extends React.Component {
         handleSubmit={this.handleSubmit}
         updateTerm={this.updateTerm}
       />
-    )
+    );
   }
 }
