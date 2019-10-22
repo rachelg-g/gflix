@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
 const Container = styled.div`
   height: 100vh;
@@ -8,7 +8,7 @@ const Container = styled.div`
   justify-content: center;
   font-size: 28px;
   margin-top: 20px;
-`;
+`
 
 export default () => (
   <Container>
@@ -16,4 +16,4 @@ export default () => (
       ⏰
     </span>
   </Container>
-);
+)
