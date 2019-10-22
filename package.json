@@ -21,11 +21,11 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build",
     "predeploy": "yarn run build"
-  }, 
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://rachelg-g.github.io/nomflix",
+  "homepage": "https://rachelg-g.github.io/Nomflix",
   "browserslist": {
     "production": [
       ">0.2%",
