@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/Nomflix/static/js/main.ed76db95.chunk.js",
-    "main.js.map": "/Nomflix/static/js/main.ed76db95.chunk.js.map",
-    "runtime~main.js": "/Nomflix/static/js/runtime~main.aec02646.js",
-    "runtime~main.js.map": "/Nomflix/static/js/runtime~main.aec02646.js.map",
-    "static/js/2.44ad0040.chunk.js": "/Nomflix/static/js/2.44ad0040.chunk.js",
-    "static/js/2.44ad0040.chunk.js.map": "/Nomflix/static/js/2.44ad0040.chunk.js.map",
-    "index.html": "/Nomflix/index.html",
-    "precache-manifest.5ba9db7f4afa6afb486fc5d7cb9ae123.js": "/Nomflix/precache-manifest.5ba9db7f4afa6afb486fc5d7cb9ae123.js",
-    "service-worker.js": "/Nomflix/service-worker.js",
-    "static/media/noPosterSmall.png": "/Nomflix/static/media/noPosterSmall.87a0eb6a.png"
+    "main.js": "/gflix/static/js/main.6e01446a.chunk.js",
+    "main.js.map": "/gflix/static/js/main.6e01446a.chunk.js.map",
+    "runtime~main.js": "/gflix/static/js/runtime~main.3d03a522.js",
+    "runtime~main.js.map": "/gflix/static/js/runtime~main.3d03a522.js.map",
+    "static/js/2.c5e53365.chunk.js": "/gflix/static/js/2.c5e53365.chunk.js",
+    "static/js/2.c5e53365.chunk.js.map": "/gflix/static/js/2.c5e53365.chunk.js.map",
+    "index.html": "/gflix/index.html",
+    "precache-manifest.5bbd45154c713da9b9d633825072611a.js": "/gflix/precache-manifest.5bbd45154c713da9b9d633825072611a.js",
+    "service-worker.js": "/gflix/service-worker.js",
+    "static/media/noPosterSmall.png": "/gflix/static/media/noPosterSmall.87a0eb6a.png"
   }
 }
