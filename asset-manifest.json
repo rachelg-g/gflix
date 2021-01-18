@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/gflix/static/js/main.6e01446a.chunk.js",
-    "main.js.map": "/gflix/static/js/main.6e01446a.chunk.js.map",
-    "runtime~main.js": "/gflix/static/js/runtime~main.3d03a522.js",
-    "runtime~main.js.map": "/gflix/static/js/runtime~main.3d03a522.js.map",
-    "static/js/2.c5e53365.chunk.js": "/gflix/static/js/2.c5e53365.chunk.js",
-    "static/js/2.c5e53365.chunk.js.map": "/gflix/static/js/2.c5e53365.chunk.js.map",
+    "main.js": "/gflix/static/js/main.9ca55505.chunk.js",
+    "main.js.map": "/gflix/static/js/main.9ca55505.chunk.js.map",
+    "runtime~main.js": "/gflix/static/js/runtime~main.a7791ea9.js",
+    "runtime~main.js.map": "/gflix/static/js/runtime~main.a7791ea9.js.map",
+    "static/js/2.61ffd60d.chunk.js": "/gflix/static/js/2.61ffd60d.chunk.js",
+    "static/js/2.61ffd60d.chunk.js.map": "/gflix/static/js/2.61ffd60d.chunk.js.map",
     "index.html": "/gflix/index.html",
-    "precache-manifest.5bbd45154c713da9b9d633825072611a.js": "/gflix/precache-manifest.5bbd45154c713da9b9d633825072611a.js",
+    "precache-manifest.f6acd4b61d3987272e09879785782faf.js": "/gflix/precache-manifest.f6acd4b61d3987272e09879785782faf.js",
     "service-worker.js": "/gflix/service-worker.js",
     "static/media/noPosterSmall.png": "/gflix/static/media/noPosterSmall.87a0eb6a.png"
   }
